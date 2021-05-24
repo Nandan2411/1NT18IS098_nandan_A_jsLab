@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+        p {
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        
+        body {
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Current Date</h1>
+    <p id="current_date"></p>
+    <h1>Current Time</h1>
+    <p id="current_time"></p>
+    <script>
+        let today = new Date();
+        let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+
+        document.getElementById("current_date").innerHTML = date;
+        let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+        document.getElementById("current_time").innerHTML = time;
+        let dateTime = date + ' ' + time;
+
+        document.write("  <br/><br/> Floor of 10.7 is  " + Math.floor(10.7));
+        document.write("<br/><br/>  Sqrt of 2  is  " + Math.sqrt(2));
+        document.write("<br/><br/>  Log of 2  is  " + Math.log(2));
+        document.write("<br/><br/>  max of 2,7,1,24  is  " + Math.max(2, 7, 1, 24));
+        document.write("<br/><br/>  min of 2,7,1,24  is  " + Math.min(2, 7, 1, 24));
+        document.write("<br/><br/>  Sin of 90  is  " + Math.sin(90));
+        document.write("<br/><br/>  Cos of 90  is  " + Math.cos(90));
+        document.write("<br/><br/>  Tan of 90 is  " + Math.tan(90));
+        document.write("<br/><br/>  Exponential of 2  is  " + Math.exp(2));
+        document.write("<br/><br/>  Random number generator  " + Math.random());
+    </script>
+
+</body>
+
+</html>
